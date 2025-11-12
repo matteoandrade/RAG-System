@@ -1,1 +1,5 @@
-// I have no idea what to write
+#include <iostream>
+
+void main() {
+    std::cout << "Hello World";
+}
