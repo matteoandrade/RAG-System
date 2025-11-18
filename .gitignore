@@ -1,2 +1,6 @@
 *.json
 *.gguf
+.vscode/
+external/
+build/
+instructions.txt
