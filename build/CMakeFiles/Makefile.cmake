@@ -101,6 +101,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/data_preprocess.dir/DependInfo.cmake"
   "CMakeFiles/vector_db.dir/DependInfo.cmake"
+  "CMakeFiles/main.dir/DependInfo.cmake"
   "_deps/llama-build/ggml/src/CMakeFiles/ggml-base.dir/DependInfo.cmake"
   "_deps/llama-build/ggml/src/CMakeFiles/ggml.dir/DependInfo.cmake"
   "_deps/llama-build/ggml/src/CMakeFiles/ggml-cpu.dir/DependInfo.cmake"

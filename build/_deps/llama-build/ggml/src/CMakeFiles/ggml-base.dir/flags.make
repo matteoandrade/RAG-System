@@ -3,13 +3,13 @@
 
 # compile C with /usr/bin/cc
 # compile CXX with /usr/bin/c++
-C_DEFINES = -DGGML_BUILD -DGGML_COMMIT=\"22e1ce2f\" -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_VERSION=\"0.9.4\" -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_base_EXPORTS
+C_DEFINES = -DGGML_BUILD -DGGML_COMMIT=\"7d77f073\" -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_VERSION=\"0.9.4\" -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_base_EXPORTS
 
 C_INCLUDES = -I/home/matteojandrade/4414/RAG-System/external/faiss-install/include -I/home/matteojandrade/4414/RAG-System/build/_deps/llama-src/ggml/src/. -I/home/matteojandrade/4414/RAG-System/build/_deps/llama-src/ggml/src/../include
 
 C_FLAGS = -O3 -DNDEBUG -fPIC -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wdouble-promotion -std=gnu11
 
-CXX_DEFINES = -DGGML_BUILD -DGGML_COMMIT=\"22e1ce2f\" -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_VERSION=\"0.9.4\" -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_base_EXPORTS
+CXX_DEFINES = -DGGML_BUILD -DGGML_COMMIT=\"7d77f073\" -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_VERSION=\"0.9.4\" -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_base_EXPORTS
 
 CXX_INCLUDES = -I/home/matteojandrade/4414/RAG-System/external/faiss-install/include -I/home/matteojandrade/4414/RAG-System/build/_deps/llama-src/ggml/src/. -I/home/matteojandrade/4414/RAG-System/build/_deps/llama-src/ggml/src/../include
 

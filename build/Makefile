@@ -188,6 +188,19 @@ vector_db/fast:
 .PHONY : vector_db/fast
 
 #=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+#=============================================================================
 # Target rules for targets named ggml-base
 
 # Build rule for target.
@@ -263,6 +276,30 @@ data_preprocess.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_preprocess.dir/build.make CMakeFiles/data_preprocess.dir/data_preprocess.cpp.s
 .PHONY : data_preprocess.cpp.s
 
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
+.PHONY : main.cpp.s
+
 vector_db.o: vector_db.cpp.o
 .PHONY : vector_db.o
 
@@ -304,10 +341,14 @@ help:
 	@echo "... ggml-base"
 	@echo "... ggml-cpu"
 	@echo "... llama"
+	@echo "... main"
 	@echo "... vector_db"
 	@echo "... data_preprocess.o"
 	@echo "... data_preprocess.i"
 	@echo "... data_preprocess.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 	@echo "... vector_db.o"
 	@echo "... vector_db.i"
 	@echo "... vector_db.s"

@@ -1,5 +1,6 @@
 /home/matteojandrade/4414/RAG-System/build/CMakeFiles/data_preprocess.dir
 /home/matteojandrade/4414/RAG-System/build/CMakeFiles/vector_db.dir
+/home/matteojandrade/4414/RAG-System/build/CMakeFiles/main.dir
 /home/matteojandrade/4414/RAG-System/build/CMakeFiles/edit_cache.dir
 /home/matteojandrade/4414/RAG-System/build/CMakeFiles/rebuild_cache.dir
 /home/matteojandrade/4414/RAG-System/build/CMakeFiles/list_install_components.dir

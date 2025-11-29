@@ -92,7 +92,7 @@ data_preprocess_EXTERNAL_OBJECTS =
 
 data_preprocess: CMakeFiles/data_preprocess.dir/data_preprocess.cpp.o
 data_preprocess: CMakeFiles/data_preprocess.dir/build.make
-data_preprocess: bin/libllama.so.0.0.30
+data_preprocess: bin/libllama.so.0.0.64
 data_preprocess: bin/libggml.so.0.9.4
 data_preprocess: bin/libggml-cpu.so.0.9.4
 data_preprocess: bin/libggml-base.so.0.9.4

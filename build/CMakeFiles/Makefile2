@@ -65,6 +65,7 @@ CMAKE_BINARY_DIR = /home/matteojandrade/4414/RAG-System/build
 # The main recursive "all" target.
 all: CMakeFiles/data_preprocess.dir/all
 all: CMakeFiles/vector_db.dir/all
+all: CMakeFiles/main.dir/all
 all: _deps/json-build/all
 all: _deps/llama-build/all
 .PHONY : all
@@ -77,6 +78,7 @@ preinstall: _deps/llama-build/preinstall
 # The main recursive "clean" target.
 clean: CMakeFiles/data_preprocess.dir/clean
 clean: CMakeFiles/vector_db.dir/clean
+clean: CMakeFiles/main.dir/clean
 clean: _deps/json-build/clean
 clean: _deps/llama-build/clean
 .PHONY : clean
@@ -195,7 +197,7 @@ CMakeFiles/data_preprocess.dir/all: _deps/llama-build/src/CMakeFiles/llama.dir/a
 
 # Build rule for subdir invocation for target.
 CMakeFiles/data_preprocess.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/matteojandrade/4414/RAG-System/build/CMakeFiles 98
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/matteojandrade/4414/RAG-System/build/CMakeFiles 97
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/data_preprocess.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/matteojandrade/4414/RAG-System/build/CMakeFiles 0
 .PHONY : CMakeFiles/data_preprocess.dir/rule
@@ -234,6 +236,35 @@ vector_db: CMakeFiles/vector_db.dir/rule
 CMakeFiles/vector_db.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector_db.dir/build.make CMakeFiles/vector_db.dir/clean
 .PHONY : CMakeFiles/vector_db.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/main.dir
+
+# All Build rule for target.
+CMakeFiles/main.dir/all: _deps/llama-build/ggml/src/CMakeFiles/ggml-base.dir/all
+CMakeFiles/main.dir/all: _deps/llama-build/ggml/src/CMakeFiles/ggml.dir/all
+CMakeFiles/main.dir/all: _deps/llama-build/ggml/src/CMakeFiles/ggml-cpu.dir/all
+CMakeFiles/main.dir/all: _deps/llama-build/src/CMakeFiles/llama.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/matteojandrade/4414/RAG-System/build/CMakeFiles --progress-num=98 "Built target main"
+.PHONY : CMakeFiles/main.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/matteojandrade/4414/RAG-System/build/CMakeFiles 97
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/matteojandrade/4414/RAG-System/build/CMakeFiles 0
+.PHONY : CMakeFiles/main.dir/rule
+
+# Convenience name for target.
+main: CMakeFiles/main.dir/rule
+.PHONY : main
+
+# clean rule for target.
+CMakeFiles/main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
+.PHONY : CMakeFiles/main.dir/clean
 
 #=============================================================================
 # Target rules for target _deps/llama-build/ggml/src/CMakeFiles/ggml-base.dir
@@ -323,12 +354,12 @@ _deps/llama-build/src/CMakeFiles/llama.dir/all: _deps/llama-build/ggml/src/CMake
 _deps/llama-build/src/CMakeFiles/llama.dir/all: _deps/llama-build/ggml/src/CMakeFiles/ggml-cpu.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/llama-build/src/CMakeFiles/llama.dir/build.make _deps/llama-build/src/CMakeFiles/llama.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/llama-build/src/CMakeFiles/llama.dir/build.make _deps/llama-build/src/CMakeFiles/llama.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/matteojandrade/4414/RAG-System/build/CMakeFiles --progress-num=19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98 "Built target llama"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/matteojandrade/4414/RAG-System/build/CMakeFiles --progress-num=19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97 "Built target llama"
 .PHONY : _deps/llama-build/src/CMakeFiles/llama.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/llama-build/src/CMakeFiles/llama.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/matteojandrade/4414/RAG-System/build/CMakeFiles 97
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/matteojandrade/4414/RAG-System/build/CMakeFiles 96
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/llama-build/src/CMakeFiles/llama.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/matteojandrade/4414/RAG-System/build/CMakeFiles 0
 .PHONY : _deps/llama-build/src/CMakeFiles/llama.dir/rule
